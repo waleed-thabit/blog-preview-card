@@ -4,6 +4,7 @@
   --white: hsl(0, 0%, 100%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-950: hsl(0, 0%, 7%);
+  --black: hsl(0, 0, 0);
   /* fonts size and weight  */
   --fs-p: 1rem;
   --fw-p: 500;
@@ -70,4 +71,25 @@ main {
 }
 .img-2 {
   width: 40px;
+}
+
+/* main footer  */
+.attr {
+  font-size: clamp(10px, 3.5vw, 16px);
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.waleed {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: clamp(13px, 3.5vw, 19px);
+}
+.waleed:hover {
+  transform: translateY(-5px);
+  display: inline-block;
+  color: var(--white);
+  font-weight: 900;
 }
