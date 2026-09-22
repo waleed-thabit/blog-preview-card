@@ -8,7 +8,12 @@
   --fs-p: 1rem;
   --fw-p: 500;
   --fw-h1: 800;
-  /* paddings, mairgins, gaps */
+  /* paddings, mairgins, gaps, border-rad */
+  --main-pad: 1.5625rem;
+  --border-r: 1rem;
+  --gap: 1rem;
+  /* shadow  */
+  --sh: 12px 12px black;
 }
 
 * {
@@ -26,4 +31,43 @@ body {
   place-items: center;
   background-color: var(--yellow);
   font-family: Figtree, sans-serif;
+}
+
+main {
+  padding: var(--main-pad);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: var(--main-pad);
+  border-radius: var(--border-r);
+  width: 100%;
+  max-width: 450px;
+  box-shadow: var(--sh);
+}
+
+.learning {
+  background-color: var(--yellow);
+  width: fit-content;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.img-1 {
+  border-radius: var(--border-r);
+  aspect-ratio: 5.5 / 4;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.card-footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.img-2 {
+  width: 40px;
 }
