@@ -14,7 +14,7 @@
   --border-r: 1rem;
   --gap: 1rem;
   /* shadow  */
-  --sh: 12px 12px black;
+  --sh: 8px 8px black;
 }
 
 * {
@@ -47,10 +47,12 @@ main {
   width: 100%;
   max-width: 450px;
   box-shadow: var(--sh);
+  border: 1px solid black;
 }
 
 .learning {
   background-color: var(--yellow);
+  color: var(--gray-950);
   width: fit-content;
   padding: 0.4rem;
   margin-top: 2rem;
@@ -79,7 +81,7 @@ main {
 .date {
   color: var(--gray-950);
   margin-bottom: 0;
-
+  font-weight: 600;
   font-size: clamp(var(--res-fs-100));
 }
 .paragraph {
@@ -91,10 +93,16 @@ main {
 .title {
   font-size: clamp(var(--res-fs-300));
   font-weight: 800;
+  color: var(--gray-950);
+}
+.title:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 .name {
   font-weight: 800;
   font-size: 1rem;
+  color: var(--gray-950);
 }
 
 /* main footer  */
