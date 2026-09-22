@@ -100,10 +100,8 @@ main {
   color: var(--yellow);
   cursor: pointer;
 }
-.title:focus {
+.title:focus-visible {
   color: var(--yellow);
-  outline: none;
-  text-decoration: underline;
 }
 .name {
   font-weight: 800;
