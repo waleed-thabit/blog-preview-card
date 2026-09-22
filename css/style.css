@@ -94,10 +94,16 @@ main {
   font-size: clamp(var(--res-fs-300));
   font-weight: 800;
   color: var(--gray-950);
+  text-decoration: none;
 }
 .title:hover {
   color: var(--yellow);
   cursor: pointer;
+}
+.title:focus {
+  color: var(--yellow);
+  outline: none;
+  text-decoration: underline;
 }
 .name {
   font-weight: 800;
@@ -120,6 +126,13 @@ main {
   font-size: clamp(13px, 3.5vw, 19px);
 }
 .waleed:hover {
+  transform: translateY(-5px);
+  display: inline-block;
+  color: var(--white);
+  font-weight: 900;
+}
+.waleed:focus {
+  outline: none;
   transform: translateY(-5px);
   display: inline-block;
   color: var(--white);
