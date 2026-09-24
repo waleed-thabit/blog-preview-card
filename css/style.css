@@ -11,7 +11,7 @@
   --res-fs-100: 12px, 3.2vw, 14px;
   /* paddings, mairgins, gaps, border-rad */
   --main-pad: 1.5625rem;
-  --border-r: 1rem;
+  --border-r: 1.5rem;
   --gap: 1rem;
   /* shadow  */
   --sh: 8px 8px black;
@@ -45,7 +45,7 @@ main {
   padding: var(--main-pad);
   border-radius: var(--border-r);
   width: 100%;
-  max-width: calc(450 / 16 * 1rem);
+  max-width: calc(410 / 16 * 1rem);
   box-shadow: var(--sh);
   border: 1px solid black;
 }
