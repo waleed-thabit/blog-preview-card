@@ -45,7 +45,7 @@ main {
   padding: var(--main-pad);
   border-radius: var(--border-r);
   width: 100%;
-  max-width: 450px;
+  max-width: calc(450 / 16 * 1rem);
   box-shadow: var(--sh);
   border: 1px solid black;
 }
@@ -54,8 +54,8 @@ main {
   background-color: var(--yellow);
   color: var(--gray-950);
   width: fit-content;
-  padding: 0.4rem;
-  margin-top: 2rem;
+  padding: calc(6.4 / 16 * 1rem);
+  margin-block-start: 2rem;
 
   font-size: clamp(var(--res-fs-100));
   font-weight: 800;
@@ -80,13 +80,13 @@ main {
 /* font styleing  */
 .date {
   color: var(--gray-950);
-  margin-bottom: 0;
+  margin-block-end: 0;
   font-weight: 600;
   font-size: clamp(var(--res-fs-100));
 }
 .paragraph {
   color: var(--gray-500);
-  margin-top: 0;
+  margin-block-start: 0;
   font-size: clamp(var(--res-fs-200));
   font-weight: 500;
 }
@@ -113,7 +113,7 @@ main {
 .attr {
   font-size: clamp(10px, 3.5vw, 16px);
   font-weight: 300;
-  padding-bottom: 10px;
+  padding-block-end: 10px;
 }
 .waleed {
   text-decoration: none;
@@ -137,7 +137,7 @@ main {
   font-weight: 900;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: calc(1440 / 16 * 1rem)) {
   .img-1 {
     aspect-ratio: unset;
     object-fit: unset;
